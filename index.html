@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VLAN Pilot – Polityka prywatności / Privacy Policy</title>
+<style>
+  :root { --bg: #0b1013; --surface: #141b20; --text: #f9fafb; --muted: #b8c0c7; --red: #ef252b; --border: #2c363e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  header svg { width: 56px; height: 56px; flex: none; }
+  h1 { font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.3px; }
+  h1 .pilot { color: var(--red); }
+  nav { margin: 8px 0 32px; color: var(--muted); }
+  nav a { color: var(--text); }
+  section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+  h2 { font-size: 22px; margin: 0 0 4px; }
+  h3 { font-size: 17px; margin: 24px 0 4px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+  ul { padding-left: 20px; }
+  a { color: #ff6b6f; }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 1000 1000" aria-hidden="true"><rect width="1000" height="1000" rx="205" fill="#0B1013" stroke="#2c363e" stroke-width="12"/><g transform="translate(80 232) scale(10.45)"><path d="M 3 6.5 H 13.7 Q 15.1 6.5 15.8 8 L 28.6 33.5 L 34.4 21.3 Q 35.5 18.8 38.1 18.8 H 47.5 L 33.0 47.2 Q 31.8 50.0 29.1 50.1 H 26.4 Q 23.9 50.1 22.6 47.3 Z" fill="#F9FAFB"/><path d="M 39.0 6.3 H 59.8 C 69.3 6.3 75.0 12.1 75.0 20.4 C 75.0 28.9 68.9 35.1 59.0 35.1 H 43.5 L 48.6 25.4 H 58.7 C 62.8 25.4 65.2 23.8 65.2 20.3 C 65.2 16.7 62.7 15.3 58.8 15.3 H 33.7 Z" fill="#EF252B"/></g></svg>
+    <h1>VLAN <span class="pilot">Pilot</span></h1>
+  </header>
+  <nav><a href="#pl">Polski</a> · <a href="#en">English</a></nav>
+
+  <section id="pl" lang="pl">
+    <h2>Polityka prywatności</h2>
+    <p class="meta">Aplikacja mobilna VLAN Pilot (Android, identyfikator pl.fvlan.control). Obowiązuje od 2 listopada 2026 r.</p>
+
+    <h3>W skrócie</h3>
+    <p>VLAN Pilot nie zbiera, nie wysyła i nie sprzedaje żadnych danych osobowych. Aplikacja nie ma własnego serwera, kont użytkowników, reklam ani analityki.</p>
+
+    <h3>Z czym łączy się aplikacja</h3>
+    <p>Aplikacja łączy się wyłącznie przez HTTPS z urządzeniem FortiGate, którego adres podaje użytkownik. Z tym urządzeniem wymienia dane potrzebne do zarządzania portami FortiSwitch: konfigurację portów i VLAN-ów, stan portów i PoE oraz listę wykrytych urządzeń sieciowych. Autor aplikacji nie ma do tych danych dostępu.</p>
+
+    <h3>Dane przechowywane na telefonie</h3>
+    <ul>
+      <li>Profile FortiGate (nazwa, adres, VDOM, odcisk zaufanego certyfikatu) oraz ustawienia aplikacji.</li>
+      <li>Tokeny API FortiGate – w zaszyfrowanym magazynie systemowym telefonu (Android Keystore).</li>
+      <li>Historia ostatnich 250 zmian portów, potrzebna do cofania zmian.</li>
+    </ul>
+    <p>Dane te nie opuszczają telefonu i nie są objęte kopią zapasową w chmurze. Usunięcie aplikacji usuwa je w całości.</p>
+
+    <h3>Adresy MAC, IP i nazwy urządzeń</h3>
+    <p>Dane urządzeń podłączonych do portów są pobierane z FortiGate i wyświetlane tylko na telefonie. Producent karty sieciowej jest ustalany na podstawie wbudowanej bazy IEEE, bez połączenia z internetem.</p>
+
+    <h3>Uprawnienia</h3>
+    <ul>
+      <li><strong>Internet</strong> – połączenie z FortiGate.</li>
+      <li><strong>Biometria</strong> – opcjonalna blokada aplikacji odciskiem palca lub twarzą. Dane biometryczne obsługuje system Android; aplikacja ich nie otrzymuje.</li>
+    </ul>
+
+    <h3>Udostępnianie danych</h3>
+    <p>Aplikacja nie udostępnia danych żadnym podmiotom trzecim i nie zawiera zewnętrznych bibliotek reklamowych ani analitycznych.</p>
+
+    <h3>Dzieci</h3>
+    <p>Aplikacja jest narzędziem dla administratorów sieci i nie jest przeznaczona dla dzieci.</p>
+
+    <h3>Zmiany i kontakt</h3>
+    <p>Zmiany polityki będą publikowane na tej stronie wraz z nową datą. Pytania: <a href="mailto:artur.szkari@gmail.com">artur.szkari@gmail.com</a>.</p>
+
+    <p class="meta">VLAN Pilot jest niezależną aplikacją i nie jest powiązany z Fortinet, Inc. Fortinet, FortiGate, FortiSwitch i FortiOS są znakami towarowymi Fortinet, Inc., użytymi wyłącznie do wskazania zgodności.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="meta">VLAN Pilot mobile app (Android, application ID pl.fvlan.control). Effective 2 November 2026.</p>
+
+    <h3>Summary</h3>
+    <p>VLAN Pilot does not collect, transmit or sell any personal data. The app has no server of its own, no user accounts, no ads and no analytics.</p>
+
+    <h3>What the app connects to</h3>
+    <p>The app connects only over HTTPS to the FortiGate whose address you enter. With that device it exchanges the data needed to manage FortiSwitch ports: port and VLAN configuration, port and PoE status, and the list of detected network devices. The developer has no access to this data.</p>
+
+    <h3>Data stored on the phone</h3>
+    <ul>
+      <li>FortiGate profiles (name, address, VDOM, trusted certificate fingerprint) and app settings.</li>
+      <li>FortiGate API tokens – in the phone's encrypted system storage (Android Keystore).</li>
+      <li>A history of the last 250 port changes, used for undo.</li>
+    </ul>
+    <p>This data never leaves the phone and is excluded from cloud backup. Uninstalling the app deletes all of it.</p>
+
+    <h3>MAC addresses, IP addresses and device names</h3>
+    <p>Information about devices connected to ports is read from your FortiGate and shown only on the phone. Network adapter manufacturers are identified from a built-in IEEE database, without any internet connection.</p>
+
+    <h3>Permissions</h3>
+    <ul>
+      <li><strong>Internet</strong> – to connect to your FortiGate.</li>
+      <li><strong>Biometrics</strong> – optional app lock with fingerprint or face. Biometric data is handled by Android; the app never receives it.</li>
+    </ul>
+
+    <h3>Data sharing</h3>
+    <p>The app shares no data with third parties and contains no third-party advertising or analytics libraries.</p>
+
+    <h3>Children</h3>
+    <p>The app is a tool for network administrators and is not directed at children.</p>
+
+    <h3>Changes and contact</h3>
+    <p>Changes to this policy will be published on this page with a new date. Questions: <a href="mailto:artur.szkari@gmail.com">artur.szkari@gmail.com</a>.</p>
+
+    <p class="meta">VLAN Pilot is an independent app and is not affiliated with Fortinet, Inc. Fortinet, FortiGate, FortiSwitch and FortiOS are trademarks of Fortinet, Inc., used only to describe compatibility.</p>
+  </section>
+
+  <footer>© 2026 VLAN Pilot</footer>
+</main>
+</body>
+</html>
